@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        applicationId "com.techintegrity.appu"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //    compile 'com.jakewharton:butterknife:7.0.1'
+    //compile 'com.loopj.android:android-async-http:1.4.9'
+    compile project(':facebooklibrary')
+    compile project(':slideMenuLibrary')
+
+    //compile 'com.github.nkzawa:socket.io-client:0.3.0'
+    compile('io.socket:socket.io-client:0.7.0') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+
+    compile('com.twitter.sdk.android:twitter:1.13.+@aar') {
+        transitive = true
+    }
+
+
+    compile('com.paypal.sdk:paypal-android-sdk:2.15.1') {
+        exclude group: 'io.card'
+    }
+    compile project(':drop-in')
+
+
+
+
+
+
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okhttp3:okhttp-ws:3.4.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'cz.msebera.android:httpclient:4.4.1.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.koushikdutta.ion:ion:2.+'
+    compile 'com.victor:lib:1.0.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile 'com.google.android.gms:play-services-maps:10.0.1'
+    compile 'com.google.android.gms:play-services-analytics:10.0.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
+    compile 'com.lukekorth:mailable_log:0.1.4'
+    compile 'com.google.firebase:firebase-auth:10.0.1'
+    compile 'com.dinuscxj:circleprogressbar:1.1.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.tomerrosenfeld.customanalogclockview:custom-analog-clock-view:1.04'
+    testCompile 'junit:junit:4.12'
+}
+
+apply plugin: 'com.google.gms.google-services'

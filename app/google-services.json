@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "304854942609",
+    "firebase_url": "https://vale-dbb6b.firebaseio.com",
+    "project_id": "vale-dbb6b",
+    "storage_bucket": "vale-dbb6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304854942609:android:aa913ac8d1759f49",
+        "android_client_info": {
+          "package_name": "com.techintegrity.appu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304854942609-8vhfbn2iasvc1k6ulsa2bmd4h80t158f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7yfxO3vQSS6HDoP2KJWr5ZZq3An390c0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

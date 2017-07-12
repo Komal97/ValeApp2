@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-160dp"
+        android:layout_marginBottom="100dp"/>
+
+    <ImageView
+        android:id="@+id/back_image"
+        android:src="@drawable/buildings_back"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"
+
+        />
+    <TextView
+        android:id="@+id/location_text"
+        android:background="@drawable/border_black"
+        android:layout_width="match_parent"
+
+        android:layout_above="@id/back_image"
+
+        android:layout_height="40dp"
+        android:text="Fetching your Location"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+
+    <ImageView
+        android:id="@+id/img_location"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/location_text"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/location_img_logo" />
+
+
+</RelativeLayout>

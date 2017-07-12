@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#FFF4BB6C</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/yellow_texi</item>
+        <item name="colorControlNormal">@color/yellow_texi</item>
+    </style>
+
+    <style name="progressbartheme" parent="AppTheme">
+        <item name="colorAccent">@color/yellow_texi</item>
+        <item name="android:color">@color/yellow_texi</item>
+    </style>
+
+    <style name="DialogAnimation" >
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+    <style name="DialogUpDownAnim" parent="@android:style/Theme.Translucent.NoTitleBar">
+
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/DialogSlideAnimation</item>
+    </style>
+
+    <style name="DialogSlideAnimation" >
+        <item name="android:windowEnterAnimation">@anim/anim_slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/anim_slide_in_left</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="FormTextInputLayou" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/yellow_texi</item>
+        <item name="android:textColor">@color/yellow_texi</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <!--<item name="colorAccent">@color/border_color</item>-->
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <!--<item name="colorAccent">@color/dialog_error_color</item>-->
+        <!--<item name="colorControlNormal">@color/border_color</item>-->
+        <!--<item name="colorControlActivated">@color/border_color</item>-->
+        <!--<item name="colorControlNormal">@color/border_color</item>-->
+        <!--<item name="colorControlActivated">@color/border_color</item>-->
+        <!--<item name="colorControlHighlight">@color/border_color</item>-->
+
+    </style>
+
+    <style name="FormTextInputLayoutTheme" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+
+        <!--<item name="android:textSize">@dimen/font_14</item>-->
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <!--<item name="colorAccent">@color/dialog_error_color</item>-->
+        <!--<item name="colorControlNormal">@color/border_color</item>-->
+        <!--<item name="colorControlActivated">@color/border_color</item>-->
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="colorAccent">@color/border_color</item>
+        <item name="colorControlNormal">@color/border_color</item>
+        <!--<item name="colorControlActivated">@color/border_color</item>-->
+        <!--<item name="colorControlHighlight">@color/border_color</item>-->
+
+    </style>
+
+    <style name="FormTextInputLayoutTheme2" parent="Theme.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+
+        <!--<item name="android:textSize">@dimen/font_14</item>-->
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <!--<item name="colorAccent">@color/dialog_error_color</item>-->
+        <!--<item name="colorControlNormal">@color/border_color</item>-->
+        <!--<item name="colorControlActivated">@color/border_color</item>-->
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="colorAccent">@color/border_color</item>
+        <item name="colorControlNormal">@color/border_color</item>
+        <!--<item name="colorControlActivated">@color/border_color</item>-->
+        <!--<item name="colorControlHighlight">@color/border_color</item>-->
+
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Define color properties as desired -->
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="android:textColorHighlight">@color/light_blue</item>
+        <item name="colorAccent">@color/dark_blue</item>
+        <item name="colorControlNormal">@color/dark_blue</item>
+        <!-- Define window properties as desired -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+
+    <style name="btn_inactive_state">
+        <item name="background">@drawable/btn_state</item>
+        <item name="android:textColor">#424242</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btn_active_state">
+        <item name="background">@drawable/btn_state</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/yellow"
+        android:layout_marginBottom="15dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/margin_15">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:src="@drawable/menu_icon" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/upload_document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_toRightOf="@id/layout_menu"
+            android:text="@string/promocode"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18" />
+
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/text_applied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Code Applied Successfully!!"
+        android:textColor="@color/yellow_texi"
+        android:textSize="20sp" />
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu">
+
+
+
+
+            <ImageView
+
+                android:id="@+id/img_logo"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/txt_promocode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="PROMO CODE"
+                android:textColor="@color/yellow_texi"
+                android:textSize="@dimen/font_18" />
+
+
+            <LinearLayout
+                android:padding="20dp"
+                android:id="@+id/edit_text_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_promocode"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/FormTextInputLayoutTheme"
+                        app:hintTextAppearance="@style/FormTextInputLayou"
+                       >
+
+                        <EditText
+                            android:id="@+id/edit_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_card_giftcard_orange_24dp"
+                            android:drawablePadding="@dimen/margin_10"
+                            android:drawableStart="@drawable/ic_card_giftcard_orange_24dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="Code"
+                            android:inputType="text"
+                            android:textColor="@color/yellow_texi"
+                            android:textColorHint="@color/yellow_texi"
+                            android:textSize="@dimen/font_16" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:id="@+id/layout_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_30"
+                        android:background="@drawable/rounded_border_background"
+                        android:minWidth="@dimen/height_200"
+                        android:padding="@dimen/margin_10">
+
+                        <TextView
+                            android:id="@+id/txt_submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/submit"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_16" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    <include layout="@layout/notify_alert"></include>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

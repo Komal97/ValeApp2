@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/activity_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/driver_info_tray"
+        android:alpha="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+
+            android:background="@color/yellow">
+
+            <RelativeLayout
+                android:id="@+id/layout_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/margin_15">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:src="@drawable/prev" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="En Route"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_18" />
+
+            <TextView
+                android:background="@color/yellow_texi"
+                android:id="@+id/ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_marginRight="8dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+        <TextView
+
+            android:padding="5dp"
+            android:layout_below="@id/activity_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/driver_info_tray"
+            android:text="Vale Boy Info"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/yellow_texi"/>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:background="@color/yellow_texi"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/driver_info_tray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow_texi"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/call_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/track_circle"
+            >
+
+
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.7"
+                android:scaleY="1.7"
+                android:layout_marginBottom="10dp"
+                android:src="@android:drawable/stat_sys_phone_call" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.8"
+
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Mr. Ashish Kumar"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="+91 1234567890"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your OTP is 2341"
+                    android:textColor="@color/white"
+                    android:textStyle="italic|bold"
+                    android:layout_centerInParent="true"
+                    android:textSize="20sp"/>
+
+
+
+
+            <!--   <TextView
+                   android:id="@+id/phno"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="+91 123456789"
+                   android:textColor="@color/white"
+                   android:textSize="20sp" />-->
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/img_user"
+                android:layout_width="@dimen/height_60"
+                android:layout_height="@dimen/height_60"
+               android:layout_margin="5dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/male_circle" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.8★"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

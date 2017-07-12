@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    tools:context="com.texi.user.DialogTimerFragment">
+
+
+    <!--<TextView-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:text="@string/timer"-->
+        <!--android:textColor="@color/yellow_texi"-->
+        <!--android:textSize="26sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginBottom="70dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@color/grey" />-->
+
+    <!--<FrameLayout-->
+
+        <!--android:layout_width="170dp"-->
+        <!--android:layout_height="170dp"-->
+        <!--android:layout_marginBottom="70dp"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/clock">-->
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/clock"&ndash;&gt;-->
+            <!--&lt;!&ndash;&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/timer_text"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+
+            <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="15:00"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/yellow_texi"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="44dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textStyle="bold" />&ndash;&gt;-->
+
+
+    <!--</FrameLayout>-->
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="match_parent"
+        android:background="@color/yellow_texi"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:paddingRight="40dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:textSize="42sp"
+        android:text="15:00"
+
+        />
+    <com.texi.user.clock.AnalogChronometer
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="160dp"
+        android:scaleY="1.8"
+        android:scaleX="1.8"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/chronometer"
+        app:dial="@drawable/dial_2"/>
+
+
+
+    <ImageButton
+        android:id="@+id/cancel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/track_circle"
+        android:backgroundTint="@color/yellow_texi"
+        android:scaleType="center"
+        android:elevation="3dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Cancel "
+        android:textColor="@color/yellow_texi"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
