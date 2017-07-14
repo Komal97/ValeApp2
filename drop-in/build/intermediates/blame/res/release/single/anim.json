@@ -1,89 +1,5 @@
 [
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_bottom_sheet_dialog_open.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\src\\main\\res\\anim\\bt_bottom_sheet_dialog_open.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\design_bottom_sheet_slide_in.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\anim\\design_bottom_sheet_slide_in.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\design_snackbar_in.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\anim\\design_snackbar_in.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_exit.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_popup_exit.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\design_bottom_sheet_slide_in.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\anim\\design_bottom_sheet_slide_in.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_expiration_date_dialog_open.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\3.0.2\\res\\anim\\bt_expiration_date_dialog_open.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\design_bottom_sheet_slide_out.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\anim\\design_bottom_sheet_slide_out.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_error_animation.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\3.0.2\\res\\anim\\bt_error_animation.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_slide_in_up.xml",
-        "source": "F:\\24by7\\drop-in\\src\\main\\res\\anim\\bt_slide_in_up.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_bottom_sheet_dialog_close.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\src\\main\\res\\anim\\bt_bottom_sheet_dialog_close.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_error_animation.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\3.0.2\\res\\anim\\bt_error_animation.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\design_snackbar_in.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\anim\\design_snackbar_in.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_enter.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\design_snackbar_out.xml",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\anim\\design_snackbar_out.xml"
     },
@@ -92,16 +8,16 @@
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\src\\main\\res\\anim\\bt_slide_in_up.xml"
     },
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\design_snackbar_out.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\anim\\design_snackbar_out.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_bottom_sheet_dialog_close.xml",
-        "source": "F:\\24by7\\drop-in\\src\\main\\res\\anim\\bt_bottom_sheet_dialog_close.xml"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_bottom_sheet_dialog_open.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\src\\main\\res\\anim\\bt_bottom_sheet_dialog_open.xml"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
@@ -124,44 +40,44 @@
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_slide_out_down.xml",
-        "source": "F:\\24by7\\drop-in\\src\\main\\res\\anim\\bt_slide_out_down.xml"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_shrink_fade_out_from_bottom.xml",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_expiration_date_dialog_close.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\3.0.2\\res\\anim\\bt_expiration_date_dialog_close.xml"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\anim\\design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_error_animation.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\3.0.2\\res\\anim\\bt_error_animation.xml"
     },
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\design_bottom_sheet_slide_out.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\anim\\design_bottom_sheet_slide_out.xml"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_bottom_sheet_dialog_close.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\src\\main\\res\\anim\\bt_bottom_sheet_dialog_close.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_expiration_date_dialog_open.xml",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\3.0.2\\res\\anim\\bt_expiration_date_dialog_open.xml"
     },
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_bottom_sheet_dialog_open.xml",
-        "source": "F:\\24by7\\drop-in\\src\\main\\res\\anim\\bt_bottom_sheet_dialog_open.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_fade_in.xml"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\design_snackbar_in.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\anim\\design_snackbar_in.xml"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\anim\\bt_expiration_date_dialog_close.xml",
