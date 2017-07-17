@@ -27,6 +27,7 @@ import android.widget.Toast;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMapOptions;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.Projection;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -36,7 +37,11 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 import com.techintegrity.appu.R;
+import com.texi.user.DirectionData.Bounds;
+import com.texi.user.gpsLocation.GPSTracker;
 import com.texi.user.gpsLocation.LocationAddress;
 import com.texi.user.utils.Common;
 
@@ -48,13 +53,17 @@ public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback
     RelativeLayout back;
     RelativeLayout call;
     TextView ok;
+    Marker[] markers;
 
-    MarkerOptions marker;
     private LocationManager locationManager;
-    private LatLng latLng;
-    private LatLng latlngcenter;
-    private Marker PickupMarker;
+
     private LatLng pickupLatLng;
+
+    private int i = 0;
+    private MarkerOptions markerOption;
+    private Marker marker;
+    private LatLng currentLoc;
+    private LatLngBounds bounds;
 
 
     @Override
@@ -65,7 +74,7 @@ public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback
         back = (RelativeLayout) findViewById(R.id.layout_back_arrow);
         call = (RelativeLayout) findViewById(R.id.call_button);
         ok = (TextView) findViewById(R.id.ok_button);
-
+        markers= new Marker[2];
 
         call.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,107 +98,14 @@ public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-
-        if (ActivityCompat.checkSelfPermission(TraceDriver.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(TraceDriver.this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-
-        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-
-        if (locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
-            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, new LocationListener() {
-                @Override
-                public void onLocationChanged(Location location) {
-                    double latitude = location.getLatitude();
-                    double longitude = location.getLongitude();
-
-                    latLng = new LatLng(latitude, longitude);
-
-
-                    Geocoder geocoder = new Geocoder(getApplicationContext());
-                    try {
-                        List<Address> addressList = geocoder.getFromLocation(latitude, longitude, 1);
-                        String str = addressList.get(0).getLocality() + ",";
-                        str += addressList.get(0).getCountryName();
-                        MarkerAdd(str);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-
-                @Override
-                public void onStatusChanged(String s, int i, Bundle bundle) {
-
-                }
-
-                @Override
-                public void onProviderEnabled(String s) {
-
-                }
-
-                @Override
-                public void onProviderDisabled(String s) {
-
-                }
-            });
-
-        } else if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, new LocationListener() {
-                @Override
-                public void onLocationChanged(Location location) {
-                    double latitude = location.getLatitude();
-                    double longitude = location.getLongitude();
-
-                    latLng = new LatLng(latitude, longitude);
-
-                    Geocoder geocoder = new Geocoder(getApplicationContext());
-                    try {
-                        List<Address> addressList = geocoder.getFromLocation(latitude, longitude, 1);
-                        String str = addressList.get(0).getLocality() + ",";
-                        str += addressList.get(0).getCountryName();
-                        MarkerAdd(str);
-                        // CameraPosition cp=CameraPosition.builder().target(new LatLng(28.63320831,77.22294813)).zoom(16).bearing(0).tilt(45).build();
-
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-
-                @Override
-                public void onStatusChanged(String s, int i, Bundle bundle) {
-
-                }
-
-                @Override
-                public void onProviderEnabled(String s) {
-
-                }
-
-                @Override
-                public void onProviderDisabled(String s) {
-
-                }
-            });
-
-        }
-
-
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TraceDriver.this, TrackingActivity.class));
+                Intent intent = new Intent(TraceDriver.this, TrackingActivity.class);
+                startActivity(intent);
                 finish();
             }
         });
-
-        MarkerAdd("DropPoint");
 
 
     }
@@ -202,6 +118,7 @@ public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.clear();
 
         CameraPosition position = Common.mgr.getSavedCameraPosition();
         if (position != null) {
@@ -213,90 +130,53 @@ public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback
             mMap.setMapType(Common.mgr.getSavedMapType());
             pickupLatLng = new LatLng(getIntent().getDoubleExtra("pickuplat", 0), getIntent().getDoubleExtra("pickuplon", 0));
 
-            mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin)).position(pickupLatLng).title("Drop Point"));
+            RetrofitDirection direction = new RetrofitDirection(mMap);
+            GPSTracker gps = new GPSTracker(this);
+            currentLoc= new LatLng(gps.getLatitude(), gps.getLongitude());
+
+            direction.get_direction_fetch_direction(currentLoc, pickupLatLng);
+
+            markers[i]= MarkerAdd(currentLoc);
+            i++;
+            markers[i]= MarkerAdd(pickupLatLng);
+            bounds = MarkerBounds(markers);
+
+            CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, 100);
+            mMap.moveCamera(cu);
+
 
         }
     }
 
-    public void MarkerAdd(String title) {
-
+    public Marker MarkerAdd(LatLng latLng ) {
 
         if (checkReady()) {
 
+            if (latLng != null) {
 
-            LatLngBounds.Builder builder = new LatLngBounds.Builder();
-
-            if (latLng != null&&PickupMarker!=null) {
-                PickupMarker.remove();
-
-                marker = new MarkerOptions()
+                markerOption = new MarkerOptions()
                         .position(latLng)
-                        .title(title)
+                        .title("Marker")
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.pickup_location_icon));
-                PickupMarker = mMap.addMarker(marker);
-                PickupMarker.setDraggable(true);
-                builder.include(marker.getPosition());
+                marker = mMap.addMarker(markerOption);
 
             }
 
-
-            // .icon(BitmapDescriptorFactory.fromResource(R.drawable.location_icon))
-
-            if (latLng != null && title != "DropPoint") {
-                LatLngBounds bounds = builder.build();
-
-                //CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
-                Log.d("areBoundsTooSmall", "areBoundsTooSmall = " + areBoundsTooSmall(bounds, 300));
-                if (areBoundsTooSmall(bounds, 300)) {
-                    //mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(bounds.getCenter(), 10));
-                    CameraUpdate cu = CameraUpdateFactory.newLatLngZoom(bounds.getCenter(), 20);
-                    mMap.animateCamera(cu, new GoogleMap.CancelableCallback() {
-
-                        @Override
-                        public void onFinish() {
-                            CameraUpdate zout = CameraUpdateFactory.zoomBy((float) -2.5);
-                            mMap.animateCamera(zout);
-                            if (PickupMarker != null)
-                                BounceAnimationMarker(PickupMarker, latLng);
-
-                        }
-
-                        @Override
-                        public void onCancel() {
-
-                        }
-                    });
-
-                } else {
-
-                    CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, 50);
-                    mMap.animateCamera(cu, new GoogleMap.CancelableCallback() {
-
-                        @Override
-                        public void onFinish() {
-                            CameraUpdate zout = CameraUpdateFactory.zoomBy((float) -1.0);
-                            mMap.animateCamera(zout);
-                            BounceAnimationMarker(PickupMarker, latLng);
-
-                        }
-
-                        @Override
-                        public void onCancel() {
-//                            CameraUpdate zout = CameraUpdateFactory.zoomBy((float) -1.0);
-//                            mMap.animateCamera(zout);
-                        }
-                    });
-
-                }
-            }
-
-
-//            CameraUpdate zoom=CameraUpdateFactory.zoomTo(5);
-//            mMap.animateCamera(zoom);
-            //mMap.moveCamera(cu);
 
 
         }
+        return marker;
+    }
+
+    public LatLngBounds MarkerBounds(Marker[] markers) {
+        LatLngBounds.Builder builder = new LatLngBounds.Builder();
+        for (Marker marker : markers) {
+            builder.include(marker.getPosition());
+        }
+        LatLngBounds bounds = builder.build();
+         return bounds;
+
+
     }
 
     public void BounceAnimationMarker(final Marker animationMarker, final LatLng animationLatLng) {

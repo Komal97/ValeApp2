@@ -280,6 +280,7 @@
     <string name="google_credentials">AIzaSyClAKS0xlhMe97OHv9mU7OPNekPtA6ADVM</string>
     <string name="facebook_app_id">255162271596228</string> <!-- Your facebook id is here-->
     <string name="google_maps_key">AIzaSyBEGzs4sYtNc0gGqS5O7YYC-lyKtQlt7IA</string> <!-- Your google map key is here-->
+    <string name="google_directions_key">AIzaSyAwSn7f2pEMa0-ewnDZkeNa1U9oDBP0GaA</string>
     <string name="twilio_api_key">4e1af5e37d692e43c544b9f638232847</string> <!-- Your twilio api key is here-->
     <string name="temp_sid">SK7007854465b3b61eff4d035644a027b7</string>
     <string name="temp_key">fsYNxOpfts9NrWJlY4KAbppeI8EoeEsl</string>

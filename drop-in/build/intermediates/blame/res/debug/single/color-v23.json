@@ -1,13 +1,5 @@
 [
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_spinner.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_switch_track.xml"
-    },
-    {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_spinner.xml"
     },
@@ -28,10 +20,6 @@
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\color-v23\\design_tint_password_toggle.xml"
-    },
-    {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_default.xml"
     },
@@ -44,44 +32,12 @@
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_color_highlight_material.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_default.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_edittext.xml"
-    },
-    {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\color-v23\\design_tint_password_toggle.xml"
     },
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_seek_thumb.xml"
-    },
-    {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_seek_thumb.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_btn_colored_text_material.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_btn_checkable.xml"
-    },
-    {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_switch_thumb.xml"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",

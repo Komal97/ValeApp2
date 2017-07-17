@@ -1,9 +1,5 @@
 [
     {
-        "merged": "F:\\24by7\\drop-in\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\bt_card_io.xml",
-        "source": "F:\\24by7\\drop-in\\build\\intermediates\\bundles\\debug\\res\\menu\\bt_card_io.xml"
-    },
-    {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\bt_card_io.xml",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\bundles\\debug\\res\\menu\\bt_card_io.xml"
     }

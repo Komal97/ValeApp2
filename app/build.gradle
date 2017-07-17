@@ -38,6 +38,14 @@ android {
         preDexLibraries = false
         javaMaxHeapSize "4g"
     }
+    configurations.all {
+        // OkHttp 3.5.0+ includes the websockets API, so we need this to prevent a conflict
+        exclude module: 'okhttp-ws'
+    }
+
+//    configurations {
+//        all*.exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+//    }
 
 }
 
@@ -69,8 +77,16 @@ dependencies {
 
 
 
-    compile 'com.squareup.okhttp3:okhttp:3.4.1'
-    compile 'com.squareup.okhttp3:okhttp-ws:3.4.1'
+
+
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+
+
+
+
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
     compile 'cz.msebera.android:httpclient:4.4.1.1'

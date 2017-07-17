@@ -235,7 +235,7 @@ public class GPSTracker extends Service implements LocationListener {
         {
             if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
             {
-                showGPSDisabledAlertToUser();
+                //showGPSDisabledAlertToUser();
             }
 
             return true;
