@@ -1,5 +1,6 @@
 package com.texi.user;
 
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 
 import com.google.android.gms.maps.GoogleMap;
@@ -8,6 +9,7 @@ import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.techintegrity.appu.R;
 import com.texi.user.DirectionData.Direction;
 
 import java.util.ArrayList;
@@ -59,7 +61,7 @@ public class RetrofitDirection {
                         line.remove();
                     }
 
-                    line  = map.addPolyline(new PolylineOptions().addAll(list).geodesic(true).width(20).color(RED));
+                    line  = map.addPolyline(new PolylineOptions().addAll(list).geodesic(true).width(10).color(R.color.yellow_texi));
                 }
             }
 

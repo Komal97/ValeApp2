@@ -1,15 +1,15 @@
 [
     {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\bt_ic_vaulted_maestro.png",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\bt_ic_vaulted_maestro.png"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\bt_ic_sms_code_dark.png",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\bt_ic_sms_code_dark.png"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\bt_ic_vaulted_maestro.png",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\bt_ic_vaulted_maestro.png"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png",

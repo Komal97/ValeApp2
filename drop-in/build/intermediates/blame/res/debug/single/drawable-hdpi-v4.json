@@ -8,24 +8,24 @@
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\3.0.2\\res\\drawable-hdpi-v4\\bt_ic_card.png"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_full_open_on_phone.png",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bt_ic_vaulted_visa.png",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\src\\main\\res\\drawable-hdpi\\bt_ic_vaulted_visa.png"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_full_open_on_phone.png",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bt_ic_camera.png",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\3.0.2\\res\\drawable-hdpi-v4\\bt_ic_camera.png"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bt_ic_camera.png",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\3.0.2\\res\\drawable-hdpi-v4\\bt_ic_camera.png"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
@@ -100,12 +100,12 @@
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\3.0.2\\res\\drawable-hdpi-v4\\bt_ic_amex.png"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
-    },
-    {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",

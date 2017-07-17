@@ -1,23 +1,23 @@
 [
     {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png"
-    },
-    {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4\\bt_ic_vaulted_paypal.png",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\src\\main\\res\\drawable-xxxhdpi\\bt_ic_vaulted_paypal.png"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4\\bt_ic_unknown.png",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\3.0.2\\res\\drawable-xxxhdpi-v4\\bt_ic_unknown.png"
-    },
-    {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4\\bt_ic_vaulted_venmo.png",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\src\\main\\res\\drawable-xxxhdpi\\bt_ic_vaulted_venmo.png"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4\\bt_ic_unknown.png",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\3.0.2\\res\\drawable-xxxhdpi-v4\\bt_ic_unknown.png"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4\\bt_ic_android_pay.png",

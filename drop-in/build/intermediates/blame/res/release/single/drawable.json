@@ -24,20 +24,20 @@
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\drawable\\design_snackbar_background.xml"
-    },
-    {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_ab_back_material.xml"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable\\bt_submit_button_background.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\src\\main\\res\\drawable\\bt_submit_button_background.xml"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable\\bt_submit_button_background.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\src\\main\\res\\drawable\\bt_submit_button_background.xml"
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\drawable\\design_snackbar_background.xml"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",

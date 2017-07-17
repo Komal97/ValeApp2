@@ -40,12 +40,12 @@
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.0-alpha1\\res\\layout\\design_navigation_menu.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_action_mode_close_item_material.xml"
-    },
-    {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\layout\\bt_section_divider.xml",
         "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\src\\main\\res\\layout\\bt_section_divider.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "F:\\AndroidStudioProjects\\24by7\\drop-in\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
