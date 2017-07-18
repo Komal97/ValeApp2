@@ -1,16 +1,22 @@
 package com.texi.user;
 
-import android.support.v4.content.ContextCompat;
+import android.app.Dialog;
+import android.content.Context;
 import android.util.Log;
 
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.techintegrity.appu.R;
 import com.texi.user.DirectionData.Direction;
+import com.victor.loading.rotate.RotateLoading;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,10 +34,23 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitDirection {
 
     private final GoogleMap map;
+    private final Context context;
     private Polyline line;
+    private RotateLoading cusRotateLoading;
 
-    RetrofitDirection(GoogleMap mMap){
+
+
+    Dialog progressDialog;
+
+    RetrofitDirection(GoogleMap mMap,Context context){
         this.map=mMap;
+        this.context=context;
+
+        progressDialog = new Dialog(context, android.R.style.Theme_Translucent_NoTitleBar);
+        progressDialog.setContentView(R.layout.custom_progress_dialog);
+        progressDialog.setCancelable(false);
+        cusRotateLoading = (RotateLoading) progressDialog.findViewById(R.id.rotateloading_register);
+
     }
 
     String baseUrl = "https://maps.googleapis.com";
@@ -43,11 +62,14 @@ public class RetrofitDirection {
     private List<LatLng> list;
 
 
-    public List<LatLng> get_direction_fetch_direction(LatLng originLatLng,LatLng destLatlng){
+    public void get_direction_fetch_direction(LatLng originLatLng,LatLng destLatlng){
         String origlatLng = originLatLng.latitude+","+originLatLng.longitude;
         String destLtlng = destLatlng.latitude+","+destLatlng.longitude;
 
         Call<Direction> call = retrofitsMap.getDirection("metric",origlatLng,destLtlng);
+
+        progressDialog.show();
+        cusRotateLoading.start();
 
         call.enqueue(new Callback<Direction>() {
             @Override
@@ -60,18 +82,39 @@ public class RetrofitDirection {
                     if(line!=null) {
                         line.remove();
                     }
+                    LatLngBounds.Builder builder = LatLngBounds.builder();
+                    for (LatLng latlng : list){
+                        builder.include(latlng);
+                    }
+                    LatLngBounds bounds = builder.build();
+
+                    CameraUpdate cu =  CameraUpdateFactory.newLatLngBounds(bounds,200);
+
+
 
                     line  = map.addPolyline(new PolylineOptions().addAll(list).geodesic(true).width(10).color(R.color.yellow_texi));
+                    map.moveCamera(cu);
+
+                    CameraPosition pos= map.getCameraPosition();
+
+                    CameraUpdate cun= CameraUpdateFactory.newCameraPosition(CameraPosition.builder().bearing(pos.bearing).tilt(60f).target(pos.target).zoom(pos.zoom).build());
+
+                    map.animateCamera(cun);
+
                 }
+                progressDialog.cancel();
+                cusRotateLoading.stop();
             }
 
             @Override
             public void onFailure(Call<Direction> call, Throwable t) {
                 Log.w("Url",call.request().url().toString());
                 Log.e("Failure",t.getLocalizedMessage());
+                progressDialog.cancel();
+                cusRotateLoading.stop();
             }
         });
-        return list;
+
     }
 
     private List<LatLng> decodePoly(String encoded) {

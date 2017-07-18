@@ -53,28 +53,22 @@ public class PaymentTypeActivity extends AppCompatActivity {
     View.OnClickListener clickListener;
 
 
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay_cash);
 
-        cash = (RelativeLayout) findViewById(R.id.layout_cash) ;
-        paytm = (RelativeLayout) findViewById(R.id.layout_cash_paytm) ;
-        creditCard=(RelativeLayout) findViewById(R.id.layout_cash_credit_card);
-
+        cash = (RelativeLayout) findViewById(R.id.layout_cash);
+        paytm = (RelativeLayout) findViewById(R.id.layout_cash_paytm);
+        creditCard = (RelativeLayout) findViewById(R.id.layout_cash_credit_card);
 
 
         clickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Payment Successful",Toast.LENGTH_SHORT);
-                Intent trackCarIntent = new Intent(PaymentTypeActivity.this,TrackingActivity.class);
-                trackCarIntent.putExtra("paymentMade",true);
+                Toast.makeText(getApplicationContext(), "Payment Successful", Toast.LENGTH_SHORT);
+                Intent trackCarIntent = new Intent(PaymentTypeActivity.this, TrackingActivity.class);
+                trackCarIntent.putExtra("paymentMade", true);
                 trackCarIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(trackCarIntent);
                 finish();
@@ -87,8 +81,7 @@ public class PaymentTypeActivity extends AppCompatActivity {
         paytm.setOnClickListener(clickListener);
 
 
-
-        back_arrow=(RelativeLayout)findViewById(R.id.layout_back_arrow);
+        back_arrow = (RelativeLayout) findViewById(R.id.layout_back_arrow);
 
         back_arrow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,14 +99,7 @@ public class PaymentTypeActivity extends AppCompatActivity {
                         }).create().show();
             }
         });
-
-
-
- }
-
-
-
-
+    }
 
     @Override
     public void onBackPressed() {

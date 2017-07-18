@@ -805,7 +805,7 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
 
     public void PickupFixRateCall() {
 
-//        ProgressDialog.show();
+//        progressDialog.show();
 //        cusRotateLoading.start();
 
         FixRateArray = new ArrayList<>();
@@ -852,7 +852,7 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
         CaculationDirationIon();
 
 //                        } else {
-//                            ProgressDialog.cancel();
+//                            progressDialog.cancel();
 //                            cusRotateLoading.stop();
 //
 //                            Common.ShowHttpErrorMessage(HomeActivity.this, error.getMessage());
@@ -973,7 +973,7 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
                         .position(PickupLarLng)
                         .title("Pick Up Location")
 
-                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.pickup_location_icon));
+                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.map_green_pin));
                 PickupMarker = googleMap.addMarker(marker);
                 PickupMarker.setDraggable(true);
                 builder.include(marker.getPosition());
@@ -1451,6 +1451,5 @@ public class HomeActivity extends FragmentActivity implements OnMapReadyCallback
         super.onPause();
         Common.mgr = new MapStateManager(this);
         Common.mgr.saveMapState(googleMap);
-        Toast.makeText(this, "Map State has been save?", Toast.LENGTH_SHORT).show();
     }
 }
