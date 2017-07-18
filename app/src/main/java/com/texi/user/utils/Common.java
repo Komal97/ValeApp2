@@ -134,7 +134,7 @@ public class Common {
     private RelativeLayout layout_promo_code;
     public static MapStateManager mgr;
     static{
-        latlngcenter = new LatLng(28.690654, 77.151780);
+        latlngcenter = new LatLng(28.6961009, 77.1527008);
     }
 
 

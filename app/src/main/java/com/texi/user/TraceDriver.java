@@ -1,6 +1,7 @@
 package com.texi.user;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Point;
@@ -44,8 +45,11 @@ import com.texi.user.DirectionData.Bounds;
 import com.texi.user.gpsLocation.GPSTracker;
 import com.texi.user.gpsLocation.LocationAddress;
 import com.texi.user.utils.Common;
+import com.texi.user.utils.MapStateManager;
+import com.victor.loading.rotate.RotateLoading;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback {
@@ -53,7 +57,7 @@ public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback
     RelativeLayout back;
     RelativeLayout call;
     TextView ok;
-    Marker[] markers;
+
 
     private LocationManager locationManager;
 
@@ -64,6 +68,9 @@ public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback
     private Marker marker;
     private LatLng currentLoc;
     private LatLngBounds bounds;
+    private Dialog ProgressDialog;
+    private RotateLoading cusRotateLoading;
+    private ArrayList<Marker> listMarker;
 
 
     @Override
@@ -74,7 +81,11 @@ public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback
         back = (RelativeLayout) findViewById(R.id.layout_back_arrow);
         call = (RelativeLayout) findViewById(R.id.call_button);
         ok = (TextView) findViewById(R.id.ok_button);
-        markers= new Marker[2];
+
+        ProgressDialog = new Dialog(TraceDriver.this, android.R.style.Theme_Translucent_NoTitleBar);
+        ProgressDialog.setContentView(R.layout.custom_progress_dialog);
+        ProgressDialog.setCancelable(false);
+        cusRotateLoading = (RotateLoading) ProgressDialog.findViewById(R.id.rotateloading_register);
 
         call.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,6 +113,7 @@ public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(TraceDriver.this, TrackingActivity.class);
+                intent.putExtras(getIntent().getExtras());
                 startActivity(intent);
                 finish();
             }
@@ -120,35 +132,21 @@ public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback
         mMap = googleMap;
         mMap.clear();
 
-        CameraPosition position = Common.mgr.getSavedCameraPosition();
-        if (position != null) {
-            CameraUpdate update = CameraUpdateFactory.newCameraPosition(position);
 
-            mMap.moveCamera(update);
+        mMap.setMapType(Common.mgr.getSavedMapType());
+        pickupLatLng = new LatLng(getIntent().getDoubleExtra("pickuplat", 0), getIntent().getDoubleExtra("pickuplon", 0));
 
+        RetrofitDirection direction = new RetrofitDirection(mMap, TraceDriver.this);
+        GPSTracker gps = new GPSTracker(this);
+        currentLoc = new LatLng(gps.getLatitude(), gps.getLongitude());
 
-            mMap.setMapType(Common.mgr.getSavedMapType());
-            pickupLatLng = new LatLng(getIntent().getDoubleExtra("pickuplat", 0), getIntent().getDoubleExtra("pickuplon", 0));
+        direction.get_direction_fetch_direction(currentLoc, pickupLatLng);
 
-            RetrofitDirection direction = new RetrofitDirection(mMap);
-            GPSTracker gps = new GPSTracker(this);
-            currentLoc= new LatLng(gps.getLatitude(), gps.getLongitude());
-
-            direction.get_direction_fetch_direction(currentLoc, pickupLatLng);
-
-            markers[i]= MarkerAdd(currentLoc);
-            i++;
-            markers[i]= MarkerAdd(pickupLatLng);
-            bounds = MarkerBounds(markers);
-
-            CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, 100);
-            mMap.moveCamera(cu);
-
-
-        }
+        MarkerAdd(currentLoc);
+        MarkerAdd(pickupLatLng);
     }
 
-    public Marker MarkerAdd(LatLng latLng ) {
+    public Marker MarkerAdd(LatLng latLng) {
 
         if (checkReady()) {
 
@@ -157,27 +155,15 @@ public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback
                 markerOption = new MarkerOptions()
                         .position(latLng)
                         .title("Marker")
-                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.pickup_location_icon));
+                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.map_green_pin));
                 marker = mMap.addMarker(markerOption);
 
             }
-
-
 
         }
         return marker;
     }
 
-    public LatLngBounds MarkerBounds(Marker[] markers) {
-        LatLngBounds.Builder builder = new LatLngBounds.Builder();
-        for (Marker marker : markers) {
-            builder.include(marker.getPosition());
-        }
-        LatLngBounds bounds = builder.build();
-         return bounds;
-
-
-    }
 
     public void BounceAnimationMarker(final Marker animationMarker, final LatLng animationLatLng) {
         if (animationLatLng != null) {
@@ -218,5 +204,13 @@ public class TraceDriver extends AppCompatActivity implements OnMapReadyCallback
             return false;
         }
         return true;
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Common.mgr = new MapStateManager(this);
+        Common.mgr.saveMapState(mMap);
+
     }
 }

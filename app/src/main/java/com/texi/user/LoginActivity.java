@@ -108,7 +108,7 @@ public class LoginActivity extends AppCompatActivity {
 //                    }
 //
 //                    Log.d("loginUrl", "loginUrl " + loginUrl);
-//                    new Common.LoginCallHttp(LoginActivity.this, ProgressDialog, cusRotateLoading, edit_password.getText().toString().trim(), "", loginUrl).execute();
+//                    new Common.LoginCallHttp(LoginActivity.this, progressDialog, cusRotateLoading, edit_password.getText().toString().trim(), "", loginUrl).execute();
 //                } else {
 //                    Common.showInternetInfo(LoginActivity.this, "");
 //                }
